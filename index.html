@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanika Satoskar · Data &amp; Business Analyst</title>
+<meta name="description" content="Sanika Satoskar: data and business analyst, ex-NielsenIQ, MS Applied Data Science at the University of Chicago. Open to Summer 2027 internships and full-time roles.">
+<meta property="og:title" content="Sanika Satoskar · Data & Business Analyst">
+<meta property="og:description" content="Two years forecasting new-product launches for 20+ global CPG brands at NielsenIQ. Now at UChicago.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long scroll like a trail map. Each section is a marked waypoint along a thin left rule. */
+:root{
+  --bg:#f6f4ef; --paper:#fffdf8; --ink:#1c2230; --muted:#5d6472; --line:#ddd8cc;
+  --accent:#c2571a; --accent-soft:#f6e3d6; --glacier:#2f6f8f; --band:#d9e8ef;
+  --display:"Young Serif", Georgia, serif; --body:"Figtree", "Helvetica Neue", Arial, sans-serif; --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#12161f; --paper:#181d28; --ink:#eef0f3; --muted:#a3a9b5; --line:#2b3240;
+  --accent:#f08a4b; --accent-soft:#3a2418; --glacier:#7fb6d3; --band:#1f3340; color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px;padding-block:0 80px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;flex-wrap:wrap}
+nav .me{font:20px var(--display)}
+nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap;font-size:15px}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center;padding:36px 0 56px}
+@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.eyebrow{font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--glacier)}
+h1{font:clamp(38px,6vw,60px)/1.05 var(--display);margin:10px 0 18px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:19px;color:var(--muted);max-width:56ch;margin:0 0 22px}
+.status{display:inline-flex;gap:10px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px;max-width:60ch}
+.dot{width:9px;height:9px;border-radius:50%;background:#2e9e5b;margin-top:7px;flex:none;box-shadow:0 0 0 4px rgba(46,158,91,.15)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{font:600 15px var(--body);text-decoration:none;padding:11px 18px;border-radius:8px;border:1px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chart{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+.chart figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.chart svg{width:100%;height:auto;display:block}
+.numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:8px 0 64px}
+@media (max-width:700px){.numbers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.num{border-top:2px solid var(--ink);padding-top:10px}
+.num b{display:block;font:30px var(--display)}
+.num span{font-size:14px;color:var(--muted)}
+section{position:relative;padding:8px 0 48px 28px;border-left:1px solid var(--line)}
+section::before{content:"";position:absolute;left:-6px;top:16px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+h2{font:30px/1.2 var(--display);margin:6px 0 6px}
+.sub{color:var(--muted);margin:0 0 24px;max-width:62ch}
+.role{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 24px;padding:20px 0;border-top:1px solid var(--line)}
+@media (max-width:700px){.role{grid-template-columns:1fr}}
+.role .when{font:13px var(--mono);color:var(--muted)}
+.role h3{margin:0 0 6px;font:600 19px var(--body)}
+.role p{margin:0 0 8px}
+.role ul{margin:6px 0 0;padding-left:18px}
+.role li{margin-bottom:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font:600 18px var(--body)}
+.card .tag{font:12px var(--mono);color:var(--glacier)}
+.card p{margin:0;font-size:15.5px}
+.card .metric{font:500 14px var(--mono);background:var(--accent-soft);color:var(--ink);padding:6px 8px;border-radius:6px;align-self:flex-start}
+.card a{font-size:14px;font-weight:600;margin-top:auto}
+.lead{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.lead div{padding:14px;border:1px dashed var(--line);border-radius:10px}
+.lead b{display:block}
+.offwork{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.offwork div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
+.offwork .k{font:12px var(--mono);color:var(--glacier);text-transform:uppercase;letter-spacing:.06em}
+.offwork p{margin:6px 0 0}
+footer{margin-top:24px;padding:32px;background:var(--ink);color:var(--bg);border-radius:16px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer h2{color:var(--bg);margin:0}
+footer a{color:var(--bg)}
+footer .btn{border-color:var(--bg);color:var(--bg)}
+footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.small{font-size:13px;color:var(--muted);margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <span class="me">Sanika Satoskar</span>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#beyond">Beyond work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Data &amp; business analyst · Chicago</div>
+    <h1>I turn messy consumer data into <em>decisions people actually make.</em></h1>
+    <p class="lede">Two years at NielsenIQ forecasting new-product launches for 20+ global brands like Nestlé and PepsiCo. Now doing an MS in Applied Data Science at the University of Chicago (4.0 GPA).</p>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span><b>Open to</b> Summer 2027 internships and full-time roles starting late 2027, in data, analytics, strategy and product. On an F-1 visa (CPT/OPT), so no sponsorship needed to start.</span></div>
+    <div class="cta">
+      <a class="btn primary" href="mailto:sanikasatoskar@uchicago.edu">Email me</a>
+      <a class="btn" href="resume.html">Resume</a>
+      <a class="btn" href="https://linkedin.com/in/sanikasatoskar/">LinkedIn</a>
+    </div>
+  </div>
+  <figure class="chart" aria-label="Illustration of a forecast tracking actual sales inside a plus or minus 9 percent band">
+    <svg viewBox="0 0 400 250" role="img">
+      <title>Forecast vs. actual, within a ±9% band (illustration)</title>
+      <line x1="40" y1="210" x2="390" y2="210" stroke="var(--line)" stroke-width="1"/>
+      <line x1="40" y1="20" x2="40" y2="210" stroke="var(--line)" stroke-width="1"/>
+      <path d="M40,168 C90,150 130,118 170,108 C210,98 250,96 290,84 C330,74 360,66 390,60 L390,92 C360,98 330,106 290,116 C250,128 210,130 170,140 C130,150 90,182 40,198 Z" fill="var(--band)"/>
+      <path d="M40,183 C90,166 130,134 170,124 C210,114 250,112 290,100 C330,90 360,82 390,76" fill="none" stroke="var(--glacier)" stroke-width="2.5" stroke-dasharray="6 5"/>
+      <polyline points="40,186 75,170 110,150 145,131 180,126 215,115 250,113 285,98 320,93 355,82 390,79" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="390" cy="79" r="5" fill="var(--accent)"/>
+      <text x="48" y="34" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">weekly units</text>
+      <text x="318" y="230" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">year 1 →</text>
+      <text x="250" y="58" font-family="Figtree, sans-serif" font-size="13" fill="var(--accent)" font-weight="600">actual</text>
+      <text x="196" y="160" font-family="Figtree, sans-serif" font-size="13" fill="var(--glacier)" font-weight="600">forecast ± 9%</text>
+    </svg>
+    <figcaption>What my job looked like: forecast a launch, then check it against real sales a year later. Mine landed within ±9%. (Illustration, not client data.)</figcaption>
+  </figure>
+</header>
+
+<div class="numbers" aria-label="Highlights">
+  <div class="num"><b>20+</b><span>global CPG brands forecast</span></div>
+  <div class="num"><b>±9%</b><span>forecast vs. actual, one year after launch</span></div>
+  <div class="num"><b>4.0</b><span>GPA, MS Applied Data Science, UChicago</span></div>
+  <div class="num"><b>Rank 1</b><span>Finance &amp; Data Analytics, undergrad</span></div>
+</div>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="sub">I've worked on both sides: inside a large data company, and inside a startup where everyone wears five hats.</p>
+
+  <div class="role">
+    <div class="when">Jun 2024 – Aug 2026</div>
+    <div>
+      <h3>NielsenIQ · Product Consulting &amp; Data Analyst</h3>
+      <p>Brands came to us with one question: <i>should we launch this, and at what price?</i> I answered it with data, then checked my answer against reality.</p>
+      <ul>
+        <li>Owned demand forecasts and pricing/distribution scenarios for new-product launches across 20+ global brands (Reckitt, Nestlé, PepsiCo, General Mills, Henkel), across the US and Latin America.</li>
+        <li>Designed in-market tests (test vs. control: pack, price, flavor) and measured SKU cannibalization to recommend which variant to scale.</li>
+        <li>Turned results into readouts for client brand, marketing and leadership teams, the people who made the final call.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="role">
+    <div class="when">Jan 2025 – Aug 2026</div>
+    <div>
+      <h3>On The Move · Founder's Office</h3>
+      <p>A coaching and wellness startup for high-touch clients. I was the person who made things actually happen.</p>
+      <ul>
+        <li>Designed and launched client onboarding end to end: intake, agreements, communication.</li>
+        <li>Managed delivery of the platform MVP as the hub between the founder, coaches, tech partners and clients, tracking milestones plus acquisition and retention metrics.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="role">
+    <div class="when">Oct 2026 – now</div>
+    <div>
+      <h3>University of Chicago · Data &amp; AI Solutions Intern, Student Disability Services</h3>
+      <ul>
+        <li>Designing and piloting an AI-assisted email triage workflow, with an AI ethics and data privacy review.</li>
+        <li>Building Director-level KPI reporting from case-management data.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <p class="sub">Projects where I practiced the same skills on public data. The code is on GitHub.</p>
+  <div class="cards">
+    <article class="card">
+      <span class="tag">PySpark · Streamlit · forecasting</span>
+      <h3>Retail category analytics pipeline</h3>
+      <p>Turned 1.07M raw retail transactions into SKU velocity, Pareto and launch-curve tables, then backtested weekly demand forecasts.</p>
+      <span class="metric">22% of SKUs → 80% of revenue</span>
+      <a href="https://github.com/sanikasatoskar/retail-data-pipeline">View on GitHub →</a>
+    </article>
+    <article class="card">
+      <span class="tag">Python · XGBoost · risk</span>
+      <h3>Catching rare fraud</h3>
+      <p>On ~285K real card transactions (0.17% fraud), set the alert threshold for a fixed false-alarm budget instead of chasing accuracy.</p>
+      <span class="metric">85% of fraud caught at 0.1% FPR</span>
+      <a href="https://github.com/sanikasatoskar/fraud-detection">View on GitHub →</a>
+    </article>
+    <article class="card">
+      <span class="tag">Experimentation</span>
+      <h3>A/B test: where to put the gate</h3>
+      <p>Across ~90K mobile-game players, tested a progression gate at level 30 vs. 40 using 7-day retention as the metric.</p>
+      <span class="metric">−4.3% retention, p = 0.002</span>
+    </article>
+    <article class="card">
+      <span class="tag">LLM agents · in progress</span>
+      <h3>PayPal AI Hackathon: cash-flow copilot</h3>
+      <p>An AI agent on PayPal's APIs that answers merchants' questions on sales and fees and flags low-cash weeks before they happen.</p>
+    </article>
+  </div>
+</section>
+
+<section id="leadership">
+  <h2>Leading people</h2>
+  <div class="lead">
+    <div><b>Chairperson, The BMS Society</b>Ran seminars and conferences for 500+ people; mentored a 120-member team for Finance Conclave '23.</div>
+    <div><b>President, Rotaract Club of Mumbai Anchors</b>Led club strategy and operations; received a Presidential Citation.</div>
+    <div><b>Co-Chairperson, Placement Cell</b>Coordinated campus placement drives and Career Summit '23.</div>
+  </div>
+</section>
+
+<section id="beyond">
+  <h2>Beyond work</h2>
+  <div class="offwork">
+    <div><span class="k">Mountains</span><p>Trekked in the Himalayas and the Sahyadris. Chicago is flat, so I'm told the winter is the climb now.</p></div>
+    <div><span class="k">Travel</span><p>Solo-traveled across India, which is a crash course in talking to strangers.</p></div>
+    <div><span class="k">Racket sports</span><p>Played district-level table tennis and badminton; pickleball these days.</p></div>
+    <div><span class="k">Food</span><p>New to Chicago and working through its food scene. Recommendations welcome.</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div>
+    <h2>Let's talk.</h2>
+    <p style="margin:6px 0 0"><a href="mailto:sanikasatoskar@uchicago.edu">sanikasatoskar@uchicago.edu</a> · <a href="https://linkedin.com/in/sanikasatoskar/">LinkedIn</a></p>
+  </div>
+  <div class="cta" style="margin:0">
+    <a class="btn primary" href="mailto:sanikasatoskar@uchicago.edu">Email me</a>
+    <a class="btn" href="resume.html">Resume</a>
+    <a class="btn" href="https://linkedin.com/in/sanikasatoskar/">LinkedIn</a>
+  </div>
+</footer>
+<p class="small">© 2026 Sanika Satoskar · Chicago, IL</p>
+</div>
+</body>
+</html>
