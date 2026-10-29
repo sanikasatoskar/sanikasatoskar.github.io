@@ -84,6 +84,16 @@ footer a{color:var(--bg)}
 footer .btn{border-color:var(--bg);color:var(--bg)}
 footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .small{font-size:13px;color:var(--muted);margin-top:18px}
+/* Film strip: a nod to three generations of cinematographers. Sprocket holes are drawn with repeating gradients. */
+.reel{margin:0 0 64px;background:var(--ink);color:var(--bg);border-radius:6px;padding:30px 0;position:relative}
+.reel::before,.reel::after{content:"";position:absolute;left:0;right:0;height:12px;background:repeating-linear-gradient(90deg,transparent 0 10px,var(--bg) 10px 24px,transparent 24px 34px);opacity:.9}
+.reel::before{top:9px}.reel::after{bottom:9px}
+.frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;padding:0 2px}
+@media (max-width:760px){.frames{grid-template-columns:1fr}}
+.frame{border:1px solid rgba(255,255,255,.18);padding:18px 20px;min-height:150px}
+.frame .k{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.frame h3{font:22px/1.2 var(--display);margin:8px 0 6px;color:var(--bg)}
+.frame p{margin:0;font-size:15.5px;opacity:.88}
 </style>
 </head>
 <body>
@@ -91,6 +101,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
 <nav aria-label="Main">
   <span class="me">Sanika Satoskar</span>
   <ul>
+    <li><a href="#story">Story</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#beyond">Beyond work</a></li>
@@ -103,7 +114,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
     <div class="eyebrow">Data &amp; business analyst · Chicago</div>
     <h1>I turn messy consumer data into <em>decisions people actually make.</em></h1>
     <p class="lede">Two years at NielsenIQ forecasting new-product launches for 20+ global brands like Nestlé and PepsiCo. Now doing an MS in Applied Data Science at the University of Chicago (4.0 GPA).</p>
-    <div class="status"><span class="dot" aria-hidden="true"></span><span><b>Open to</b> Summer 2027 internships and full-time roles starting late 2027, in data, analytics, strategy and product. On an F-1 visa (CPT/OPT), so no sponsorship needed to start.</span></div>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span><b>Open to</b> Summer 2027 internships and full-time roles starting late 2027, in data, analytics, strategy and product.</span></div>
     <div class="cta">
       <a class="btn primary" href="mailto:sanikasatoskar@uchicago.edu">Email me</a>
       <a class="btn" href="resume.html">Resume</a>
@@ -135,6 +146,14 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
   <div class="num"><b>Rank 1</b><span>Finance &amp; Data Analytics, undergrad</span></div>
 </div>
 
+<div class="reel" id="story" aria-label="Where I come from">
+  <div class="frames">
+    <div class="frame"><span class="k">Frame 1 · Family</span><h3>I grew up around cameras.</h3><p>My grandfather was a cinematographer who worked with Yash Chopra, and my father and uncles are cinematographers too.</p></div>
+    <div class="frame"><span class="k">Frame 2 · What stuck</span><h3>A love for media and entertainment.</h3><p>The fast pace, the excitement around every new project, and an industry that keeps reinventing how it tells stories.</p></div>
+    <div class="frame"><span class="k">Frame 3 · My lens</span><h3>Mine turned out to be data.</h3><p>Understanding how people respond to something new, and turning that into a call someone can act on.</p></div>
+  </div>
+</div>
+
 <section id="experience">
   <h2>Experience</h2>
   <p class="sub">I've worked on both sides: inside a large data company, and inside a startup where everyone wears five hats.</p>
@@ -158,6 +177,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
       <h3>On The Move · Founder's Office</h3>
       <p>A coaching and wellness startup for high-touch clients. I was the person who made things actually happen.</p>
       <ul>
+        <li>Prepared pitch materials and ran outreach and first conversations with leads, helping bring in 50+ new clients in a year as the startup grew revenue about 2.3x and its client base 4x+.</li>
         <li>Designed and launched client onboarding end to end: intake, agreements, communication.</li>
         <li>Managed delivery of the platform MVP as the hub between the founder, coaches, tech partners and clients, tracking milestones plus acquisition and retention metrics.</li>
       </ul>
@@ -169,7 +189,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
     <div>
       <h3>University of Chicago · Data &amp; AI Solutions Intern, Student Disability Services</h3>
       <ul>
-        <li>Designing and piloting an AI-assisted email triage workflow, with an AI ethics and data privacy review.</li>
+        <li>Designing and piloting an AI-assisted email triage workflow, using Microsoft Power Automate to automate Outlook workflows, with an AI ethics and data privacy review.</li>
         <li>Building Director-level KPI reporting from case-management data.</li>
       </ul>
     </div>
@@ -201,6 +221,16 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
       <span class="metric">−4.3% retention, p = 0.002</span>
     </article>
     <article class="card">
+      <span class="tag">PostgreSQL · Neo4j · team project · in progress</span>
+      <h3>NFL prediction-market platform</h3>
+      <p>With a UChicago team, building one place to track how NFL game odds shift on Polymarket, from raw API data to a Streamlit app.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Consumer research · undergrad</span>
+      <h3>Cadbury Silk: does marketing pay off?</h3>
+      <p>Designed a 100+ respondent consumer survey and paired it with industry research to test how promotions, influencer work and limited editions relate to financial performance.</p>
+    </article>
+    <article class="card">
       <span class="tag">LLM agents · in progress</span>
       <h3>PayPal AI Hackathon: cash-flow copilot</h3>
       <p>An AI agent on PayPal's APIs that answers merchants' questions on sales and fees and flags low-cash weeks before they happen.</p>
@@ -214,6 +244,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
     <div><b>Chairperson, The BMS Society</b>Ran seminars and conferences for 500+ people; mentored a 120-member team for Finance Conclave '23.</div>
     <div><b>President, Rotaract Club of Mumbai Anchors</b>Led club strategy and operations; received a Presidential Citation.</div>
     <div><b>Co-Chairperson, Placement Cell</b>Coordinated campus placement drives and Career Summit '23.</div>
+    <div><b>Vice President, Public Relations, Toastmasters Club</b>Handled the club's public relations and outreach.</div>
   </div>
 </section>
 
@@ -222,7 +253,7 @@ footer .btn.primary{background:var(--accent);border-color:var(--accent);color:#f
   <div class="offwork">
     <div><span class="k">Mountains</span><p>Trekked in the Himalayas and the Sahyadris. Chicago is flat, so I'm told the winter is the climb now.</p></div>
     <div><span class="k">Travel</span><p>Solo-traveled across India, which is a crash course in talking to strangers.</p></div>
-    <div><span class="k">Racket sports</span><p>Played district-level table tennis and badminton; pickleball these days.</p></div>
+    <div><span class="k">Racket sports</span><p>Played district-level table tennis and badminton; learning pickleball now.</p></div>
     <div><span class="k">Food</span><p>New to Chicago and working through its food scene. Recommendations welcome.</p></div>
   </div>
 </section>
