@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
-:root{--bg:#f6f4ef;--paper:#fffdf8;--ink:#1c2230;--muted:#5d6472;--line:#ddd8cc;--accent:#c2571a}
-@media (prefers-color-scheme: dark){:root{--bg:#12161f;--paper:#181d28;--ink:#eef0f3;--muted:#a3a9b5;--line:#2b3240;--accent:#f08a4b;color-scheme:dark}}
+:root{--bg:oklch(95.5% 0.012 75);--paper:oklch(98.3% 0.008 75);--ink:oklch(22% 0.016 50);--muted:oklch(46% 0.02 50);--line:oklch(87% 0.016 70);--accent:oklch(46% 0.155 27)}
+@media (prefers-color-scheme: dark){:root{--bg:oklch(17% 0.012 45);--paper:oklch(21% 0.014 45);--ink:oklch(94% 0.012 70);--muted:oklch(74% 0.02 60);--line:oklch(32% 0.02 45);--accent:oklch(71% 0.14 27);color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 "Figtree","Helvetica Neue",Arial,sans-serif}
 .bar{max-width:860px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
@@ -32,7 +32,7 @@ p{margin:0 0 6px}
 .skills p{margin-bottom:3px}
 @media print{
   @page{size:letter;margin:0.45in 0.5in}
-  :root{--bg:#fff;--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#8a3a0c}
+  :root{--bg:#fff;--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#7d221d}
   body{font-size:10.2px;line-height:1.32}
   .bar{display:none}
   .page{border:0;padding:0;margin:0;max-width:none}
